@@ -47,16 +47,16 @@
       }
      
    .text {
-   color: black;
-   font-size: 20px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
-   text-align: center;
-   }
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      }
    input[type=text] {
       width: 77%;
       padding: 12px;
@@ -80,6 +80,25 @@
 
       input[type=submit]:hover {
       opacity: 0.8;
+      }
+      /* Create three equal columns that floats next to each other */
+      .column {
+      float: left;
+      width: 26.33%;
+      padding: 10px;
+      height: 300px;
+      border-top-right-radius: 25px;
+      background-color:#cccccc55; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      div.column:hover {
+         background-color:aqua;
       }
    </style>
    <!-- body -->
@@ -144,11 +163,7 @@
                            
                         </div>
                      </div>
-                     <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
-                        <div class="text-img">
-                           <figure><img src="images/box_img.png" alt="#"/></figure>
-                        </div>
-                     </div>
+                    
                   </div>
                </div>
             </section>
@@ -158,14 +173,7 @@
       <!-- blog_main -->
       <div class="blog_main">
          <div class="container-fluid">
-            <!-- <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Our Blogs</h2>
-                     <span>It is a long established fact that a reader will be distracted by the readable content of a page </span>
-                  </div>
-               </div> -->
-            </div>
+         
             <!-- fist section -->
             <div class="">
                <div class="col-md-12">
@@ -233,8 +241,48 @@
       <!-- Services -->
       <div class="col-md-12">
          <div class="titlepage">
-            <h2>Services</h2>
-            
+            <h2 style="font-size: 75px;">Services</h2>   
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="column">
+               <img class=" image" src="images/1.png" alt="icon" style="width: 70px;position:absolute;margin-top:25px;margin-left:27px;">
+            <p style="color:black;text-align:center;position:relative;margin-top: 150px;font-size: 26px;font-weight:bold;">Identify markets
+               and vendors</p>
+            </div>
+            <div class="column" style="margin: 70px 90px 0px 90px;">
+               <img class=" image" src="images/2.png" alt="icon" style="width: 70px;position:absolute;margin-top:25px;margin-left:27px;">
+            <p  style="color:black;text-align:center;position:relative;margin-top: 150px;font-size: 26px;font-weight:bold;">Provide product
+               development
+               assistance</p>
+            </div>
+            <div class="column" >
+               <img class=" image" src="images/3.png" alt="icon" style="width: 70px;position:absolute;margin-top:25px;margin-left:27px;">
+            <p style="color:black;text-align:center;position:relative;margin-top: 150px;font-size: 26px;font-weight:bold;">On-site
+               production tracking
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="column" >
+               <img class=" image" src="images/4.png" alt="icon" style="width: 70px;position:absolute;margin-top:25px;margin-left:27px;">
+            <p style="color:black;text-align:center;position:relative;margin-top: 150px;font-size: 26px;font-weight:bold;">Order placement
+               and Social
+               accountability</p>
+            </div>
+            <div class="column" style="margin: 70px 90px 90px 90px;">
+               <img class=" image" src="images/5.png" alt="icon" style="width: 70px;position:absolute;margin-top:25px;margin-left:27px;">
+            <p style="color:black;text-align:center;position:relative;margin-top: 150px;font-size: 26px;font-weight:bold;">Sampling and
+               Quality control</p>
+            </div>
+            <div class="column" >
+               <img class=" image" src="images/6.png" alt="icon" style="width: 70px;position:absolute;margin-top:25px;margin-left:27px;">
+            <p style="color:black; text-align:center;position:relative;margin-top: 150px;font-size: 26px;font-weight:bold;">Human rights
+               diligence, etc.</p>
+            </div>
          </div>
       </div>
       <!--End Services -->
@@ -242,42 +290,75 @@
       <div class="section">
         
             <div id="" class="Testimonial ">
-               <div class="container">
-               
-             
-                  
-                 
+               <div class="container">                 
                      <div class=" Testimonial_box" >
-                        <h2 style="font-size: 53px;width: 40%;color: aqua;">Unique<br>Proposition</h2>
-                        <p style="font-size: 33px;width: 77%;line-height: 45px;">our strength and ability to source products from across India & neighbouring countries at best prices.
+                        <h2 style="font-size: 53px;width: 50%;color: aqua;">Unique<br>Proposition</h2>
+                        <p style="font-size: 33px;width: 50%;line-height: 45px;">our strength and ability to source products from across India & neighbouring countries at best prices.
                         </p>
-                        
+                        <div style="position: relative;margin-left:62%;margin-top: -11%;">
+                           <div class=" col-md-9">
+                              <div class=" Testimonial_box" >
+                                 <p><img class=" image" src="images/2.png" alt="icon" style="width: 40px;position:relative;margin-top:9px;margin-left:-40px;">&ensp;Ethical sourcing</p><br><br>
+                                 <p><img class=" image" src="images/5.png" alt="icon" style="width: 40px;position:relative;margin-top:9px;margin-left:-40px;">&ensp;Trouble
+                                    shooting</p>   
+                              </div>  
+                           </div>
+                        </div>
+                        <div style="position: relative;margin-left:85%;margin-top: -19%;">
+                           <div class=" col-md-9">
+                              <div class=" Testimonial_box" >
+                                 <p><img class=" image" src="images/4.png" alt="icon" style="width: 40px;position:relative;margin-top:9px;margin-left:-40px;">&ensp;Strong
+                                    vendor base</p><br><br>
+                                 <p><img class=" image" src="images/3.png" alt="icon" style="width: 40px;position:relative;margin-top:9px;margin-left:-40px;">&ensp;Individuals</p>   
+                              </div>  
+                           </div>
+                        </div>
                      </div>  
              
-               <div style="position: relative;margin-left: 62%;margin-top: -9%;">
-                  <div class=" col-md-9">
-                     <div class=" Testimonial_box" >
-                        <p>Ethical sourcing</p>
-                        <p>Ethical sourcing</p>   
-                     </div>  
-                  </div>
-               </div>
-               <div style="position: relative;margin-left: 62%;margin-top: -9%;">
-                  <div class=" col-md-9">
-                     <div class=" Testimonial_box" >
-                        <p>Ethical sourcing</p>
-                        <p>Ethical sourcing</p>   
-                     </div>  
-                  </div>
-               </div>
+               
+               
             </div>
          </div>
       </div>
      
       <!-- end Testimonial -->
+      <div class="">
+         <div class="col-md-12">
+            <div style="padding: 90px;">
+               <div class="row d_flex">
+                  
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                     <!-- <h1 style="text-align: center;font-size:70px;font-weight: bold;">About us</h1>
+                     <div class="our_img">
+                        <figure><img src="images/lamp.png" alt="#"/></figure>
+                     </div> -->
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                     <div class="our_text_box">
+                        <h3 style="font-size:35px;line-height:40px;">we have worked with various single owned &
+                           multinational companies. We’ve had the
+                           opportunity and privilege to service
+                           overseas clients, right from boutique stores,
+                           designers, to mid/high end retailers, mass
+                           retailers and clubs.</p><br><br>
+                           <div>
+                           <img src="images/brand1.png" width="100" alt="#" style="margin-right: 100px;"/>
+                           <img src="images/brand2.png" width="100" alt="#" style="margin-right: 100px;"/>
+                           <img src="images/brand3.png" width="100" alt="#"/><br>
+                           <img src="images/brand4.png" width="100" alt="#" style="margin-right: 100px;"/>
+                           <img src="images/brand5.png" width="100" alt="#" style="margin-right: 100px;"/>
+                           <img src="images/brand1.png" width="100" alt="#"/>
+                           </div>
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- contant -->
       <div class="blog_main">
-         <div class="container" style="text-align: center;padding: 50px;background-color: #D3D3D3;">
+         <div class="container" style="text-align: center;padding: 50px;background-color:#cccccc55">
             <div class="col-md-12"> 
                <div style="padding: 50px;color:black">
                   <p style="font-size: 50px;line-height:50px"> Collaborating with businesses to innovate faster, sustainable supply chains and making life better for people everywhere. </p>
@@ -298,24 +379,55 @@
       </div>
 
       <!-- end contant -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  
-                  <div class="col-md-12">
-                     <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            
-         </div>
-      </footer>
+      
+      <!-- Footer -->
+  <footer  style="background-color: black;">
+   <div class="container py-5 " style="border-bottom:1px solid white ;">
+      
+     <div class="row py-4">
+      <div class="logo">
+         <a href="index.html"><img style="margin-top: 20px;" src="images/logo.png" alt="#" /></a>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+         <p class="text-white">Anant is derived from the name of the
+            founder’s sons, Aneesh & Siddhant. An from
+            first two letters of Aneesh and Ant from last
+            three letters of Siddhant.
+            In Sanskrit, Anant means ‘endless’, ‘infinite’,
+            ‘everlasting’, ‘joyful’, and that’s how we
+            partner up in business as well. </p>
+        
+       </div>
+      
+       <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 text-white" style="margin-left: 33px;">
+         <h6 class="text-uppercase font-weight-bold mb-4 text-white">Contact us</h6>
+         <p>Anant, Inc
+            Gurugram Haryana, India
+            sumitohri@anantinc.co</p><br>
+         <ul class="list-inline mt-4 text-white" style="font-size: 24px;">Find us here<br>
+           <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+           <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+           <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+           <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+           <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+         </ul>
+       </div>
+       <div class="col-lg-2 col-md-6 mb-lg-0 text-white">
+         <h4 class="text-uppercase font-weight-bold mb-4 text-white"><b>Have a Question?</b></h4>
+         <p class=" mb-4" style="font-size: 25px;font-weight: bold;">+91,9810136602</p>
+        
+       </div>
+     </div>
+   </div>
+
+   <!-- Copyrights -->
+   <div class=" py-4" style="background-color: black;">
+     <div class="container text-center">
+       <p class="text-muted mb-0 py-2">© 2020 ANANT. All Rights Reserved.</p>
+     </div>
+   </div>
+ </footer>
+ <!-- End -->
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
