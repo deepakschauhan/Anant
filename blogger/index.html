@@ -29,6 +29,59 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
    </head>
+   <style type="text/css">
+      .card:hover .overlay {
+      opacity: 1;
+      }
+      .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #02fee555;
+      }
+     
+   .text {
+   color: black;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+   }
+   input[type=text] {
+      width: 77%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 25px;
+      }
+      input[type=submit] {
+      width: 20%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 25px;
+      }
+      /* Style the submit button */
+      input[type=submit] {
+      background-color: aqua;
+      color: black;
+      border: none;
+      }
+
+      input[type=submit]:hover {
+      opacity: 0.8;
+      }
+   </style>
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
@@ -104,7 +157,7 @@
       <!-- end banner -->
       <!-- blog_main -->
       <div class="blog_main">
-         <div class="container">
+         <div class="container-fluid">
             <!-- <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
@@ -114,9 +167,9 @@
                </div> -->
             </div>
             <!-- fist section -->
-            <div class="row">
+            <div class="">
                <div class="col-md-12">
-                  <div class="our_two_box">
+                  <div style="padding-bottom: 90px;">
                      <div class="row d_flex">
                         
                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -127,7 +180,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                            <div class="our_text_box">
-                              <h3 class="awesome pa_wi">Anant Inc is a merchandise sourcing service that specializes in areas of product development, timely deliveries, online & post production inspections, coordination & communication.<br>
+                              <h3 style="font-size:35px;line-height:40px;">Anant Inc is a merchandise sourcing service that specializes in areas of product development, timely deliveries, online & post production inspections, coordination & communication.<br><br>
                               We source all apparels, accessories, gifts, commodities, food and hard goods including home furnishings, furniture, lighting, home textiles and decorative accessories. 
                               We help our clients to understand the ever-changing global market and discern their business needs.<br><br>
                               We have expertise in all buying processes including product design and development, checking raw material, product quality, production planning, and supply chain management. </p>
@@ -139,78 +192,82 @@
                </div>
             </div>
     <!-- end fist section -->
-             <!-- for section -->
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="our_two_box magna_top90">
-                     <div class="row d_flex">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                           <div class="our_img">
-                              <figure><img src="images/our_img5.jpg" alt="#"/></figure>
-                           </div>
-                           <div class="our_img">
-                              <figure><img src="images/our_img5.jpg" alt="#"/></figure>
-                           </div>
-                           <div class="our_img">
-                              <figure><img src="images/our_img5.jpg" alt="#"/></figure>
-                           </div>
-                           <div class="our_img">
-                              <figure><img src="images/our_img5.jpg" alt="#"/></figure>
-                           </div>
-                           <div class="our_img">
-                              <figure><img src="images/our_img5.jpg" alt="#"/></figure>
-                           </div>
-                        </div>
-                        <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                           <div class="our_text_box">
-                              <h3 class="awesome pa_wi">Our food Quick is comment </h3>
-                              <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
-                              <div class="post_box padding_bottom1">
-                                 <h4 class="flot_left1">Post By : Blogger </h4>
-                                 <ul class="like">
-                                    <li><a href="#"><img src="images/like.png" alt="#"/>Like</a></li>
-                                     <li><a href="#"><img src="images/comm.png" alt="#"/>Comment</a></li>
-                                 </ul>
-                              </div>
-                           </div> -->
-                        </div>
-                     </div>
+      <!-- for section -->
+         <div> 
+            <div class="card-group" style="padding: 0px 50px 100px 50px;">
+               <div class="card">
+               <img class="image" src="images/longdummy.jpeg" alt="Card image cap">
+               <div class="overlay">
+                  <div class="text">Hello World</div>
+               </div>
+               </div>
+               <div class="card">
+                  <img class=" image" src="images/longdummy.jpeg" alt="Card image cap">
+                  <div class="overlay">
+                     <div class="text">Hello World</div>
                   </div>
                </div>
+               <div class="card">
+                  <img class="image" src="images/longdummy.jpeg" alt="Card image cap">
+                  <div class="overlay">
+                     <div class="text">Hello World</div>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class=" image" src="images/longdummy.jpeg" alt="Card image cap">
+                  <div class="overlay">
+                     <div class="text">Hello World</div>
+                  </div>
+               </div>  
             </div>
+            <!-- <div><div>Previous</div><div>Next</div></div> -->
+         </div>
+        
     <!-- end for section -->
 
 
          </div>
       </div>
       <!-- end blog_main -->
-    
+
+      <!-- Services -->
+      <div class="col-md-12">
+         <div class="titlepage">
+            <h2>Services</h2>
+            
+         </div>
+      </div>
+      <!--End Services -->
       <!-- Testimonial -->
       <div class="section">
         
-            <div id="" class="Testimonial">
-                <div class="container">
-               <div class="row">
-                  <div class="col-md-6 offset-md-3">
-                     <div class="titlepage">
-                        <h2>Testimonial</h2>
-                     </div>
+            <div id="" class="Testimonial ">
+               <div class="container">
+               
+             
+                  
+                 
+                     <div class=" Testimonial_box" >
+                        <h2 style="font-size: 53px;width: 40%;color: aqua;">Unique<br>Proposition</h2>
+                        <p style="font-size: 33px;width: 77%;line-height: 45px;">our strength and ability to source products from across India & neighbouring countries at best prices.
+                        </p>
+                        
+                     </div>  
+             
+               <div style="position: relative;margin-left: 62%;margin-top: -9%;">
+                  <div class=" col-md-9">
+                     <div class=" Testimonial_box" >
+                        <p>Ethical sourcing</p>
+                        <p>Ethical sourcing</p>   
+                     </div>  
                   </div>
                </div>
-               <div class="row d_flex">
-                  <div class="col-md-3">
-                     <div class="Testimonial_box">
-                        <i><img src="images/plan1.png" alt="#"/></i>
-                     </div>
-                  </div>
-                  <div class="col-md-9">
-                     <div class="Testimonial_box">
-                        <h4>will smithe</h4>
-                        <p>Tof Lorem Ipsum, you need to be There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a pass
-                        <br>
-                        age of Lorem Ipsum, you need to be
-                        </p>
-                     </div>
+               <div style="position: relative;margin-left: 62%;margin-top: -9%;">
+                  <div class=" col-md-9">
+                     <div class=" Testimonial_box" >
+                        <p>Ethical sourcing</p>
+                        <p>Ethical sourcing</p>   
+                     </div>  
                   </div>
                </div>
             </div>
@@ -218,57 +275,35 @@
       </div>
      
       <!-- end Testimonial -->
-      <!-- contact -->
-      <div id="contact" class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Contact us</h2>
-                     <span>There are many variations of passages of Lorem Ipsum available, but the </span>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 ">
-                  <form class="main_form ">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="form_contril" placeholder="Name " type="text" name="Name ">
-                        </div>
-                        <div class="col-md-12">
-                           <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
-                        </div>
-                        <div class="col-md-12">
-                           <input class="form_contril" placeholder="Email" type="text" name="Email">
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                        </div>
-                        <div class="col-sm-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
+      <!-- contant -->
+      <div class="blog_main">
+         <div class="container" style="text-align: center;padding: 50px;background-color: #D3D3D3;">
+            <div class="col-md-12"> 
+               <div style="padding: 50px;color:black">
+                  <p style="font-size: 50px;line-height:50px"> Collaborating with businesses to innovate faster, sustainable supply chains and making life better for people everywhere. </p>
+                  <b><span style="font-size: 25px;margin-top: 10px;line-height: 75px;">COLLABORATION. INNOVATION. SUSTAINABILITY.</span> </b>
+               </div> 
             </div>
          </div>
       </div>
-      <!-- end contact -->
+
+      <div class="blog_main">
+         <h1 style="text-align:center;font-size:50px;font-weight:bold;">Don’t miss<br>
+            our future updates!</h1>
+         <div class="container" style="text-align: center;padding: 50px;max-width: 830px;"> 
+            <input type="text" placeholder="e-mail address" name="mail" required>
+            <input type="submit" value="Sign Up">
+            
+         </div>
+      </div>
+
+      <!-- end contant -->
       <!--  footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12 ">
-                     <div class="cont">
-                        <h3> <strong class="multi"> Free Multipurpose Responsive</strong><br>
-                           Landing Page 2019
-                        </h3>
-                     </div>
-                  </div>
+                  
                   <div class="col-md-12">
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -278,15 +313,7 @@
                   </div>
                </div>
             </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2019 All Rights Reserved. Design by  <a href="https://html.design/"> Free Html Templates</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            
          </div>
       </footer>
       <!-- end footer -->
